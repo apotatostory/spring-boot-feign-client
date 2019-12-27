@@ -1,0 +1,17 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: service-feignclient
+  devtools:
+    restart:
+      enable: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+### Feign 配置
+feign:
+  # 是否开启断路器（熔断器）
+  hystrix:
+    enabled: true
