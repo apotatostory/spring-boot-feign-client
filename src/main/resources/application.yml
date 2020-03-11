@@ -15,3 +15,15 @@ feign:
   # 是否开启断路器（熔断器）
   hystrix:
     enabled: true
+    
+### Hystrix 配置
+hystrix: 
+  command: 
+    default: 
+      execution: 
+        isolation:
+          thread: 
+            timeoutInMilliseconds: 12000
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000

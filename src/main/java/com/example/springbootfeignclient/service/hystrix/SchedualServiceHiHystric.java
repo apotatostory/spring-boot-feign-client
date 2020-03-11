@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.example.springbootfeignclient.model.BrokerRequest;
+import com.example.springbootfeignclient.model.BrokerResponse;
 import com.example.springbootfeignclient.model.OrderRequest;
 import com.example.springbootfeignclient.model.OrderResponse;
 import com.example.springbootfeignclient.service.SpringBootFeignClientService;
@@ -48,6 +50,18 @@ public class SchedualServiceHiHystric implements SpringBootFeignClientService {
 	public OrderResponse getProduct() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public BrokerResponse setBroker(BrokerRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public BrokerResponse getBroker() {
+		// TODO Auto-generated method stub
+		return new BrokerResponse();
 	}
 
 }

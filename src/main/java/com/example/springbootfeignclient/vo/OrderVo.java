@@ -1,8 +1,8 @@
-package com.example.springbootfeignclient.model;
+package com.example.springbootfeignclient.vo;
 
 import java.math.BigDecimal;
 
-public class OrderModel {
+public class OrderVo {
 
 	private String name;
 
