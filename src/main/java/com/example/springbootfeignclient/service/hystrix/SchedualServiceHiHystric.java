@@ -5,11 +5,13 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
+import com.example.springbootfeignclient.model.BaseRs;
 import com.example.springbootfeignclient.model.BrokerRequest;
 import com.example.springbootfeignclient.model.BrokerResponse;
 import com.example.springbootfeignclient.model.OrderRequest;
 import com.example.springbootfeignclient.model.OrderResponse;
 import com.example.springbootfeignclient.service.SpringBootFeignClientService;
+import com.example.springbootfeignclient.vo.StockVo;
 
 /**
  * feign client 調用失敗時處理
@@ -62,6 +64,12 @@ public class SchedualServiceHiHystric implements SpringBootFeignClientService {
 	public BrokerResponse getBroker() {
 		// TODO Auto-generated method stub
 		return new BrokerResponse();
+	}
+
+	@Override
+	public BaseRs setStockDetail(StockVo stock) {
+		// TODO Auto-generated method stub
+		return new BaseRs();
 	}
 
 }

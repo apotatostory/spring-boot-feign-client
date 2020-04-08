@@ -8,11 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.springbootfeignclient.model.BaseRs;
 import com.example.springbootfeignclient.model.BrokerRequest;
 import com.example.springbootfeignclient.model.BrokerResponse;
 import com.example.springbootfeignclient.model.OrderRequest;
 import com.example.springbootfeignclient.model.OrderResponse;
 import com.example.springbootfeignclient.service.hystrix.SchedualServiceHiHystric;
+import com.example.springbootfeignclient.vo.StockVo;
 
 /**
  * feignClient調用介面
@@ -46,5 +48,8 @@ public interface SpringBootFeignClientService {
 
 	@RequestMapping(value = "/getBroker", method = RequestMethod.GET)
 	public BrokerResponse getBroker();
+
+	@RequestMapping(value = "/setStockDetail2", method = RequestMethod.POST)
+	public BaseRs setStockDetail(@RequestBody StockVo stock);
 
 }
