@@ -41,6 +41,9 @@ dependencies {
 	//Utils
 	compile('org.apache.commons:commons-lang3:3.6')
 	
+	// use spring-boot-common jar
+	implementation project (path:':spring-boot-common')
+	
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

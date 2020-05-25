@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.springbootfeignclient.model.BaseRs;
-import com.example.springbootfeignclient.model.BrokerRequest;
-import com.example.springbootfeignclient.model.BrokerResponse;
-import com.example.springbootfeignclient.model.OrderRequest;
-import com.example.springbootfeignclient.model.OrderResponse;
+import com.example.model.BaseRs;
+import com.example.model.BrokerRequest;
+import com.example.model.BrokerResponse;
+import com.example.model.OrderRequest;
+import com.example.model.OrderResponse;
 import com.example.springbootfeignclient.service.hystrix.SchedualServiceHiHystric;
-import com.example.springbootfeignclient.vo.StockVo;
+import com.example.vo.StockVo;
 
 /**
  * feignClient調用介面

@@ -5,13 +5,13 @@ import java.util.List;
 
 import org.springframework.stereotype.Component;
 
-import com.example.springbootfeignclient.model.BaseRs;
-import com.example.springbootfeignclient.model.BrokerRequest;
-import com.example.springbootfeignclient.model.BrokerResponse;
-import com.example.springbootfeignclient.model.OrderRequest;
-import com.example.springbootfeignclient.model.OrderResponse;
+import com.example.model.BaseRs;
+import com.example.model.BrokerRequest;
+import com.example.model.BrokerResponse;
+import com.example.model.OrderRequest;
+import com.example.model.OrderResponse;
 import com.example.springbootfeignclient.service.SpringBootFeignClientService;
-import com.example.springbootfeignclient.vo.StockVo;
+import com.example.vo.StockVo;
 
 /**
  * feign client 調用失敗時處理
